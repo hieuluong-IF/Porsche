@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Porsche Vietnam</title>
+  <link rel="icon" href="img/logo.png" type="image/png">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; font-family: 'Inter', sans-serif; }
+    body { background: #fff; color: #111; line-height: 1.6; }
+    header { display: flex; justify-content: space-between; align-items: center; padding: 1rem 2rem; background: #000; color: #fff; }
+    nav a { color: #fff; margin: 0 1rem; text-decoration: none; font-weight: 500; }
+    .hero { position: relative; text-align: center; color: white; overflow: hidden; height: auto; }
+    .hero img { width: 100%; height: auto; display: block; transition: opacity 1s ease-in-out; position: absolute; top: 0; left: 0; }
+    .hero .text { position: relative; z-index: 1; padding: 6rem 0; background: rgba(0,0,0,0.3); }
+    .hero h1 { font-size: 3rem; font-weight: 800; }
+    .hero p { margin: 0.5rem 0; font-size: 1.2rem; }
+    .hero button { margin-top: 1rem; padding: 0.8rem 1.5rem; background: #000; color: #fff; border: none; cursor: pointer; font-weight: bold; }
+    .hero-controls-sides {
+      position: absolute;
+      top: 50%;
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+      transform: translateY(-50%);
+      z-index: 2;
+      padding: 0 1rem;
+    }
+    .hero-controls-sides button {
+      background: rgba(0,0,0,0.6);
+      color: #fff;
+      border: none;
+      font-size: 2rem;
+      padding: 0.5rem 1rem;
+      cursor: pointer;
+    }
+    .section { padding: 3rem 2rem; }
+    .section h2 { font-size: 2rem; margin-bottom: 2rem; }
+    .car-section { display: flex; flex-wrap: wrap; gap: 2rem; }
+    .car-box { flex: 1 1 45%; }
+    .car-box img { width: 100%; border-radius: 8px; transition: transform 0.4s ease; }
+    .car-box img:hover { transform: scale(1.03); }
+    .car-box h3 { margin-top: 1rem; font-size: 1.5rem; }
+    .car-box p { margin: 0.5rem 0; }
+    .car-box button { margin: 0.5rem 0.25rem 0 0; padding: 0.5rem 1rem; border: none; cursor: pointer; font-weight: bold; }
+    .btn-primary {
+      background: #000;
+      color: #fff;
+      padding: 0.75rem 1.5rem;
+      font-size: 1rem;
+      border-radius: 6px;
+      font-weight: 600;
+      box-shadow: 0 3px 8px rgba(0,0,0,0.15);
+      transition: background 0.3s ease;
+      text-decoration: none;
+      display: inline-block;
+      text-align: center;
+    }
+    .btn-primary:hover { background: #444; }
+    .btn-secondary { background: #eee; }
+    .explore-btn {
+      text-decoration: none;
+      background: #000;
+      color: #fff;
+      padding: 0.8rem 1.8rem;
+      border-radius: 8px;
+      font-weight: 600;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+      transition: background 0.3s ease, transform 0.2s ease;
+      animation: pulse 2s infinite;
+    }
+    .explore-btn:hover {
+      background: #333;
+      transform: translateY(-2px);
+    }
+    @keyframes pulse {
+      0% { transform: scale(1); box-shadow: 0 0 0 0 rgba(0,0,0,0.7); }
+      70% { transform: scale(1.05); box-shadow: 0 0 0 10px rgba(0,0,0,0); }
+      100% { transform: scale(1); box-shadow: 0 0 0 0 rgba(0,0,0,0); }
+    }
+    .grid-3 {
+      display: flex;
+      gap: 2rem;
+      justify-content: center;
+      align-items: flex-start;
+    }
+    .grid-3 > div {
+      flex: 1;
+      max-width: 400px;
+      text-align: left;
+    }
+    .grid-3 img {
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
+      border-radius: 8px;
+    }
+    .footer-flex {
+      display: flex;
+      justify-content: space-between;
+      gap: 2rem;
+      flex-wrap: wrap;
+    }
+    .footer-column {
+      flex: 1;
+      min-width: 250px;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <a href="trangchu.html" style="color: white; text-decoration: none; font-weight: bold;">PORSCHE VIETNAM</a>
+    <nav>
+      <a href="tramsac.html" class="btn-primary explore-btn">Trạm sạc</a>
+      <a href="cacdongxe.html" class="btn-primary explore-btn">Các dòng xe</a>
+      <a href="xemoi.html" class="btn-primary explore-btn">Xe mới</a>
+      <a href="dichvu.html" class="btn-primary explore-btn">Dịch vụ</a>
+      <a href="dangnhap.html" class="btn-primary explore-btn">Đăng nhập/ Đăng ký</a>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <img id="heroImage" src="img/911.png" alt="Porsche hero">
+    <div class="text">
+      <h1>PORSCHE</h1>
+      <p>Driven by Dreams!</p>
+      <a href="gioithieu.html" class="btn-primary explore-btn">Khám Phá Ngay</a>
+    </div>
+    <div class="hero-controls-sides">
+      <button onclick="prevHeroImage()">&#10094;</button>
+      <button onclick="nextHeroImage()">&#10095;</button>
+    </div>
+  </section>
+
+  <section class="section" data-aos="fade-up">
+    <h2>Các dòng xe</h2>
+    <div class="grid-3">
+      <div class="car-box" data-aos="fade-up">
+        <img src="img/11320a65-729c-4885-81a6-02edbceda93e.jpg" alt="Panamera">
+        <p><strong>Porsche Panamera</strong><br> Biểu Tượng Của Bản Lĩnh.<br> Giá từ <strong>6.420.000.000 VNĐ*</strong></p>
+        <a href="dathang.html" class="btn-primary">Đặt hàng</a>
+      </div>
+      <div class="car-box" data-aos="fade-up">
+        <img src="img/E3-2nd-S-model-page-headbanner.jpg" alt="Macan">
+        <p><strong>Porsche Macan</strong><br>Biểu Tượng Của Trụ Cột.<br> Giá từ <strong>3.350.000.000 VNĐ*</strong></p>
+        <a href="dathang.html" class="btn-primary">Đặt hàng</a>
+      </div>
+      <div class="car-box" data-aos="fade-up">
+        <img src="img/P18_0893_a4_rgb-e1546949577334.jpg" alt="718">
+        <p><strong>Porsche Cayenne</strong><br>Biểu Tượng Của Hoàn Hảo .<br> Giá từ <strong>3.850.000.000 VNĐ*</strong></p>
+        <a href="dathang.html" class="btn-primary">Đặt hàng</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" data-aos="fade-up">
+    <h2>Khám phá</h2>
+    <div class="grid-3">
+      <div class="car-box" data-aos="zoom-in">
+        <img src="img/teq-wheel-set-stock-clearance-desktop-banner.jpg" alt="Tin tức Porsche">
+        <p><strong>Bản tin Dịch vụ Porsche 2025 – Số 1</strong><br>
+          Từng khoảnh khắc cầm vô-lăng chiếc Porsche yêu quý đều vô cùng đặc biệt. Chúng tôi hiểu rằng, đó là lúc bạn đang mong chờ những hành trình tuyệt vời phía trước.
+        </p>
+        <button class="btn-primary">Xem thêm</button>
+      </div>
+      <div class="car-box" data-aos="zoom-in">
+        <img src="img/porsche-classic-50y-911-turbo-banner.jpg" alt="911 Classic">
+        <p><strong>Bộ sưu tập kỷ niệm 911 Turbo</strong><br>
+          Phiên bản 911 Turbo đầy uy lực cùng nội thất caro kiểu tartan đã trở thành dấu ấn khó phai trong lòng giới mộ điệu. Với nhiều phiên bản cho khách hàng sáng tạo.
+        </p>
+        <button class="btn-primary">Xem thêm</button>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="footer-flex">
+      <div class="footer-column">
+        <p><strong>Porsche Việt Nam</strong></p>
+        <p>Liên hệ: info@porsche-vietnam.com</p>
+        <p>Dịch vụ khách hàng: crm@porsche-vietnam.com</p>
+        <p>Các Trung Tâm Porsche:<br> Sài Gòn, Hà Nội, Porsche Studio</p>
+      </div>
+      <div class="footer-column">
+        <p><strong>Thông tin về Porsche</strong></p>
+        <p href="#">Porsche Việt Nam</p>
+        <p href="#">Tin tức và Sự kiện</p>
+        <p href="#">Thông tin báo chí</p>
+        <p href="#">Cơ hội việc làm</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+  <script>
+    AOS.init();
+
+    const heroImage = document.getElementById('heroImage');
+    const heroImages = [
+      'img/911.png',
+      'img/banner2.png',
+      'img/banner3.png'
+    ];
+    let currentHero = 0;
+
+    function showHeroImage(index) {
+      heroImage.src = heroImages[index];
+    }
+
+    function nextHeroImage() {
+      currentHero = (currentHero + 1) % heroImages.length;
+      showHeroImage(currentHero);
+    }
+
+    function prevHeroImage() {
+      currentHero = (currentHero - 1 + heroImages.length) % heroImages.length;
+      showHeroImage(currentHero);
+    }
+  </script>
+</body>
+</html>

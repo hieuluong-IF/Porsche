@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Đăng ký | Porsche Vietnam</title>
+  <link rel="icon" href="img/logo.png" type="image/png" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet" />
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      font-family: 'Inter', sans-serif;
+    }
+    body {
+      background: #fff;
+      color: #111;
+    }
+    header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 1rem 2rem;
+      background: #000;
+      color: #fff;
+    }
+    nav a {
+      color: #fff;
+      margin: 0 1rem;
+      text-decoration: none;
+      font-weight: 500;
+    }
+    .hero {
+      position: relative;
+      text-align: center;
+      color: white;
+    }
+    .hero img {
+      width: 100%;
+      height: auto;
+      display: block;
+    }
+    .hero .text {
+      position: absolute;
+      top: 40%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+    .hero h1 {
+      font-size: 3rem;
+      font-weight: 800;
+    }
+    .hero p {
+      margin: 0.5rem 0;
+      font-size: 1.2rem;
+    }
+    .hero a {
+      margin-top: 1rem;
+      padding: 0.8rem 1.5rem;
+      background: #000;
+      color: #fff;
+      text-decoration: none;
+      font-weight: bold;
+      display: inline-block;
+      border-radius: 6px;
+    }
+    .register-section {
+      padding: 3rem 2rem;
+      max-width: 500px;
+      margin: auto;
+      text-align: center;
+    }
+    .register-section input {
+      width: 100%;
+      padding: 0.75rem;
+      margin: 0.75rem 0;
+      border: 1px solid #999;
+      border-radius: 4px;
+      font-size: 1rem;
+    }
+    .register-section button {
+      width: 100%;
+      padding: 0.75rem;
+      margin-top: 1rem;
+      background: #000;
+      color: #fff;
+      border: none;
+      font-weight: bold;
+      font-size: 1rem;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+    .login-link {
+      margin-top: 1.5rem;
+      display: block;
+      font-size: 0.95rem;
+    }
+    .login-link a {
+      color: #000;
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <a href="trangchu.html" style="color: white; text-decoration: none; font-weight: bold;">PORSCHE VIETNAM</a>
+    <nav>
+      <a href="tramsac.html" class="btn-primary explore-btn">Trạm sạc</a>
+        <a href="cacdongxe.html" class="btn-primary explore-btn">Các dòng xe</a>
+        <a href="xemoi.html" class="btn-primary explore-btn">Xe mới</a>
+        <a href="dichvu.html" class="btn-primary explore-btn">Dịch vụ</a>
+
+    </nav>
+  </header>
+
+  <section class="hero">
+    <img src="img/banner2.png" alt="Porsche hero">
+    <div class="text">
+      <h1>Đăng ký tài khoản</h1>
+      <p>Trở thành thành viên Porsche ngay hôm nay!</p>
+    </div>
+  </section>
+
+  <section class="register-section">
+    <h2>Tạo tài khoản Porsche</h2>
+    <form>
+      <input type="text" placeholder="Họ:" required />
+      <input type="text" placeholder="Tên:" required />
+      <input type="email" placeholder="Email:" required />
+      <input type="password" placeholder="Mật khẩu:" required />
+      <input type="password" placeholder="Xác nhận mật khẩu:" required />
+      <button type="submit">Đăng ký</button>
+      <div class="login-link">
+        Đã có tài khoản? <a href="dangnhap.html">Đăng nhập tại đây</a>
+      </div>
+    </form>
+  </section>
+  
+</body>
+</html>

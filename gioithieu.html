@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Porsche Vietnam</title>
+  <link rel="icon" href="img/logo.png" type="image/png">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; font-family: 'Inter', sans-serif; }
+    body { background: #fff; color: #111; line-height: 1.6; }
+    header { display: flex; justify-content: space-between; align-items: center; padding: 1rem 2rem; background: #000; color: #fff; }
+    nav a { color: #fff; margin: 0 1rem; text-decoration: none; font-weight: 500; }
+    .hero { position: relative; text-align: center; color: white; max-width: 1200px; margin: 0 auto; }
+    .hero img { width: 100%; height: auto; display: block; border-radius: 10px; }
+    .hero .text { position: absolute; top: 40%; left: 50%; transform: translate(-50%, -50%); }
+    .hero h1 { font-size: 3rem; font-weight: 800; }
+    .hero p { margin: 0.5rem 0; font-size: 1.2rem; }
+    .hero button { margin-top: 1rem; padding: 0.8rem 1.5rem; background: #000; color: #fff; border: none; cursor: pointer; font-weight: bold; }
+    .section { padding: 3rem 2rem; max-width: 1200px; margin: 0 auto; }
+    .section h2 { font-size: 2rem; margin-bottom: 2rem; }
+    .car-section { display: flex; flex-wrap: wrap; gap: 2rem; }
+    .car-box { flex: 1 1 45%; }
+    .car-box img { width: 100%; border-radius: 8px; }
+    .car-box h3 { margin-top: 1rem; font-size: 1.5rem; }
+    .car-box p { margin: 0.5rem 0; }
+    .car-box button { margin: 0.5rem 0.25rem 0 0; padding: 0.5rem 1rem; border: none; cursor: pointer; font-weight: bold; }
+    .btn-primary {
+  background: #000;
+  color: #fff;
+  padding: 0.75rem 1.5rem;
+  font-size: 1rem;
+  border-radius: 6px;
+  font-weight: 600;
+  box-shadow: 0 3px 8px rgba(0,0,0,0.15);
+  transition: background 0.3s ease;
+  text-decoration: none; /* bỏ gạch dưới */
+  display: inline-block;
+  text-align: center;
+}
+
+
+.btn-primary:hover { background: #444; }
+    .btn-secondary { background: #eee; padding: 0.5rem 1rem; border-radius: 6px; font-weight: 600; }
+
+    .grid-3 { display: flex; gap: 2rem; justify-content: center; align-items: flex-start; flex-wrap: wrap; }
+    .grid-3 > div { flex: 1; max-width: 400px; text-align: left; }
+    .grid-3 img { width: 100%; height: 200px; object-fit: cover; border-radius: 8px; }
+
+    .feedback-section { padding: 2rem 2rem 4rem; background: #fff; }
+    .feedback-section h2 { margin-bottom: 2rem; }
+    .feedback-list { display: flex; gap: 1.5rem; flex-wrap: wrap; justify-content: center; }
+    .feedback-item { background: #f4f4f4; border-radius: 8px; padding: 1rem; max-width: 280px; flex: 1; text-align: center; }
+
+    .specs-flex { display: flex; gap: 2rem; align-items: center; flex-wrap: wrap; }
+    .specs-text { flex: 1; min-width: 280px; }
+    .specs-image { flex: 1; min-width: 280px; max-width: 400px; }
+    .specs-image img { width: 100%; height: auto; border-radius: 8px; object-fit: contain; }
+
+    footer { background: #f9f9f9; padding: 2rem; font-size: 0.9rem; }
+    .footer-flex { display: flex; justify-content: space-between; gap: 2rem; flex-wrap: wrap; }
+    .footer-column { flex: 1; min-width: 250px; }
+  </style>
+</head>
+<body>
+  <header>
+    <a href="trangchu.html" style="color: white; text-decoration: none; font-weight: bold;">PORSCHE VIETNAM</a>
+    <nav>
+      <a href="tramsac.html" class="btn-primary explore-btn">Trạm sạc</a>
+      <a href="cacdongxe.html" class="btn-primary explore-btn">Các dòng xe</a>
+      <a href="xemoi.html" class="btn-primary explore-btn">Xe mới</a>
+      <a href="dichvu.html" class="btn-primary explore-btn">Dịch vụ</a>
+      <a href="dangnhap.html" class="btn-primary explore-btn">Đăng nhập/ Đăng ký</a>
+    </nav>
+  </header>
+
+  <section class="section">
+    <h1>Taycan GTS</h1>
+    <div style="background: #f7f7f7; padding: 1.5rem; border-radius: 8px; max-width: 800px;">
+      <p>* Giá tiêu chuẩn bao gồm thuế nhập khẩu, thuế tiêu thụ đặc biệt và thuế giá trị 
+        gia tăng. Đối với dòng xe Panamera, Cayenne, Macan và Taycan giá tiêu chuẩn bao gồm thêm gói dịch vụ 4 năm bảo dưỡng. Bảng giá, thông số kỹ thuật và hình ảnh có thể thay đổi theo từng thời điểm mà không báo trước.</p>
+        <a href="dathang.html" class="btn-primary" style="margin-top: 1rem;">ĐẶT HÀNG</a>
+
+    </div>
+    <img src="img/j1-2nd-taycan-gts-banner.jpg" alt="Taycan GTS" style="width: 100%; max-width: 1200px; height: auto; display: block; margin: 2rem auto; border-radius: 10px;">
+  </section>
+  
+
+
+  <section class="section">
+    <h2>Thông số Taycan GTS</h2>
+    <div class="specs-flex">
+      <div class="specs-text">
+        <p>Công suất/kW: 485 PS (357 kW)</p>
+        <p>Công suất kW/Overboost: 598 PS (440 kW)</p>
+        <p>Mô men xoắn cực đại: 610 Nm</p>
+        <p>Tăng tốc từ 0 - 100 km/giờ (0 – 62 dặm/giờ): 3,1 giây với gói Sport Chrono</p>
+        <p>Tốc độ tối đa: 313 km/giờ</p>
+        <p>Mức tiêu thụ kết hợp: 0,9 lít/100 km</p>
+        <p>Lượng khí thải: CO2 248 g/km</p>
+        <p>Giá tiêu chuẩn: 6.430.000.000 VNĐ*</p>
+        <a href="dathang.html" class="btn-primary" style="margin-top: 1rem;">ĐẶT HÀNG</a>
+        <button class="btn-secondary">So Sánh phiên bản</button>
+      </div>
+      <div class="specs-image">
+        <img src="img/j1-2nd-taycan-gts-modelimage-sideshot.png" alt="Taycan GTS Side View">
+      </div>
+    </div>
+  </section>
+  
+
+  <section class="section">
+    <h2>Khám phá</h2>
+    <div class="grid-3">
+      <div>
+        <img src="img/teq-wheel-set-stock-clearance-desktop-banner.jpg" alt="Tin tức Porsche">
+        <p><strong>Bản tin Dịch vụ Porsche 2025 – Số 1</strong><br>
+          Từng khoảnh khắc cầm vô-lăng chiếc Porsche yêu quý đều vô cùng đặc biệt. Chúng tôi hiểu rằng, đó là lúc bạn đang mong chờ những hành trình tuyệt vời phía trước.
+        </p>
+        <button class="btn-primary" style="margin-top: 1rem;">Xem thêm</button>
+      </div>
+      <div>
+        <img src="img/porsche-classic-50y-911-turbo-banner.jpg" alt="911 Classic">
+        <p><strong>Bộ sưu tập kỷ niệm 911 Turbo</strong><br>
+          Phiên bản 911 Turbo đầy uy lực cùng nội thất caro kiểu tartan đã trở thành dấu ấn khó phai trong lòng giới mộ điệu.
+        </p>
+        <button class="btn-primary" style="margin-top: 1rem;">Xem thêm</button>
+      </div>
+    </div>
+  </section>
+  
+
+  <section class="feedback-section">
+    <h2>FEEDBACK</h2>
+    <div class="feedback-list">
+      <div class="feedback-item">
+        <p><strong>“cảm giác cầm lái thật tuyệt”</strong></p>
+        <p>Lường Minh Hiếu<br><small>Chủ sở hữu 911</small></p>
+      </div>
+      <div class="feedback-item">
+        <p><strong>“ước mơ đã thành sự thật”</strong></p>
+        <p>Lê Thị Ngọc Hân<br><small>Chủ sở hữu Taycan</small></p>
+      </div>
+      <div class="feedback-item">
+        <p><strong>“Xe rất đẳng cấp và sang”</strong></p>
+        <p>Lê Huy Trường<br><small>Chủ sở hữu Cayenne</small></p>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="footer-flex">
+      <div class="footer-column">
+        <p><strong>Porsche Việt Nam</strong></p>
+        <p>Liên hệ: info@porsche-vietnam.com</p>
+        <p>Dịch vụ khách hàng: crm@porsche-vietnam.com</p>
+        <p>Các Trung Tâm Porsche:<br> Sài Gòn, Hà Nội, Porsche Studio</p>
+      </div>
+      <div class="footer-column">
+        <p><strong>Thông tin về Porsche</strong></p>
+        <p href="#">Porsche Việt Nam</p>
+        <p href="#">Tin tức và Sự kiện</p>
+        <p href="#">Thông tin báo chí</p>
+        <p href="#">Cơ hội việc làm</p>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>

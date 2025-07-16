@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Các dòng xe Porsche</title>
+  <link rel="stylesheet" href="style.css" />
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; font-family: 'Inter', sans-serif; }
+    body { background: #fff; color: #111; line-height: 1.6; }
+    header { display: flex; justify-content: space-between; align-items: center; padding: 1rem 2rem; background: #000; color: #fff; }
+    nav a { color: #fff; margin: 0 1rem; text-decoration: none; font-weight: 500; }
+    .banner img { width: 100%; height: auto; display: block; }
+    .section { padding: 2rem; }
+    h2 { font-size: 1.5rem; margin: 2rem 0 1rem; text-align: center; text-transform: uppercase; }
+    .car-row { display: flex; flex-wrap: wrap; justify-content: space-around; margin-bottom: 3rem; }
+    .car { flex: 1 1 300px; max-width: 400px; text-align: center; margin: 1rem; }
+    .car img { width: 100%; height: auto; }
+    .car button { margin: 0.5rem; padding: 0.5rem 1rem; border: none; background: #ccc; cursor: pointer; }
+    footer { background: #f8f8f8; padding: 2rem; text-align: center; margin-top: 2rem; }
+    .footer-flex {
+      display: flex;
+      justify-content: space-between;
+      gap: 2rem;
+      flex-wrap: wrap;
+    }
+    .footer-column {
+      flex: 1;
+      min-width: 250px;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <a href="trangchu.html" style="color: white; text-decoration: none; font-weight: bold;">PORSCHE VIETNAM</a>
+    <nav>
+        <a href="tramsac.html" class="btn-primary explore-btn">Trạm sạc</a>
+        <a href="cacdongxe.html" class="btn-primary explore-btn">Các dòng xe</a>
+        <a href="xemoi.html" class="btn-primary explore-btn">Xe mới</a>
+        <a href="dichvu.html" class="btn-primary explore-btn">Dịch vụ</a>
+        <a href="dangnhap.html" class="btn-primary explore-btn">Đăng nhập/ Đăng ký</a>
+    </nav>
+  </header>
+
+  <div class="banner">
+    <img src="img/banner_dongxe.jpg" alt="banner cac dong xe">
+  </div>
+
+  <section class="section">
+    <h2>Phiên bản 718 Cayman</h2>
+    <div class="car-row">
+      <div class="car">
+        <img src="img/cayman.jpg" alt="718 Cayman">
+        <p>718 Cayman<br>Giá tiêu chuẩn: 3.850.000.000 VNĐ*</p>
+        <button>Khám phá</button>
+        <button>so sánh</button>
+      </div>
+      <div class="car">
+        <img src="img/cayman_s.jpg" alt="718 Cayman S">
+        <p>718 Cayman S<br>Giá tiêu chuẩn: 4.770.000.000 VNĐ*</p>
+        <button>Khám phá</button>
+        <button>so sánh</button>
+      </div>
+    </div>
+
+    <h2>Phiên bản 718 Boxster</h2>
+    <div class="car-row">
+      <div class="car">
+        <img src="img/boxster.jpg" alt="718 Boxster">
+        <p>718 Boxster<br>Giá tiêu chuẩn: 3.960.000.000 VNĐ*</p>
+        <button>Khám phá</button>
+        <button>so sánh</button>
+      </div>
+      <div class="car">
+        <img src="img/boxster_s.jpg" alt="718 Boxster S">
+        <p>718 Boxster S<br>Giá tiêu chuẩn: 4.880.000.000 VNĐ*</p>
+        <button>Khám phá</button>
+        <button>so sánh</button>
+      </div>
+    </div>
+
+    <h2>Phiên bản Cross Turismo</h2>
+    <div class="car-row">
+      <div class="car">
+        <img src="img/taycan4.jpg" alt="Taycan 4 Cross Turismo">
+        <p>Taycan 4 Cross Turismo<br>Giá tiêu chuẩn: 5.060.000.000 VNĐ*</p>
+        <button>Khám phá</button>
+        <button>so sánh</button>
+      </div>
+      <div class="car">
+        <img src="img/taycan4s.jpg" alt="Taycan 4S Cross Turismo">
+        <p>Taycan 4S Cross Turismo<br>Giá tiêu chuẩn: 5.710.000.000 VNĐ*</p>
+        <button>Khám phá</button>
+        <button>so sánh</button>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="footer-flex">
+      <div class="footer-column">
+        <p><strong>Porsche Việt Nam</strong></p>
+        <p>Liên hệ: info@porsche-vietnam.com</p>
+        <p>Dịch vụ khách hàng: crm@porsche-vietnam.com</p>
+        <p>Các Trung Tâm Porsche:<br> Sài Gòn, Hà Nội, Porsche Studio</p>
+      </div>
+      <div class="footer-column">
+        <p><strong>Thông tin về Porsche</strong></p>
+        <p href="#">Porsche Việt Nam</p>
+        <p href="#">Tin tức và Sự kiện</p>
+        <p href="#">Thông tin báo chí</p>
+        <p href="#">Cơ hội việc làm</p>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>
